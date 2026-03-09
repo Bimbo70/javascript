@@ -1,6 +1,6 @@
 # javascript
 
-Curso básico de jacascript para décimo año.
+Curso básico de javascript para décimo año.
 
 ## Nombre: Dilan Barquero Rojas
 ## sección: 10-4
