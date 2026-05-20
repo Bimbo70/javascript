@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Temporizador 1</title>
+</head>
+<body>
+     <input type="number" id="tiempoElegido">
+        <button onclick="comenzarTiempo()">Iniciar</button>
+        <h1 id="textoAlarma" style="color:green">Hay tiempo</h1>
+    <script>
+            let elementoSegundos = document.getElementById("tiempoElegido");
+            let elementoTextoAlarma = document.getElementById("textoAlarma");
+
+            function comenzarTiempo() {
+               setTimeout(tiempoCumplido, 10000 * elementoSegundos.value);
+            }
+            function tiempoCumplido() {
+                elementoTextoAlarma.textContent = "Se acabo el tiempo";
+                elementoTextoAlarma.style.color = "red";
+            } 
+    </script>
+</body>
+</html>
