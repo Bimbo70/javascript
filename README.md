@@ -1,4 +1,4 @@
-# javascript
+javascript
 
 Curso básico de javascript para décimo año.
 
