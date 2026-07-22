@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Cotidiano 3</title>
+    <Link rel="stylesheet" href="misEstilos.css">
+</head>
+<meta charset="UTF-8">
+<body onload="iniciarContador()">
+     <p>Que seleccion tiene mas copas del mundo?</p>
+    <input type="text"id=primeraPregunta>
+      <p>Cual es el juego que mas copias a vendido</p>
+    <input type="text"id=segundaPregunta    >
+      <p>Nombre del primer Presidente de Estados Unidos</p>
+    <input type="text"id=terceraPregunta>
+      <p>Air Jordan le pertenece a Nike o a Adidas?</p>
+    <input type="text"id=cuartaPregunta>
+      <p>Quien pinto la Mona Lisa?</p>
+    <input type="text"id=quintaPregunta>
+    <div id="contador">30</div>
+    <button onclick="detenerContador()">Termine</button>
+    <button onclick="reiniciarContador()">Volver a intentar</button>
+
+    <script>
+        let tiempo = 30;
+        let intervalo;
+
+        function actualizarContador() {
+            document.getElementById("contador").textContent = tiempo;
+        }
+        function contar() {
+            if (tiempo > 0) {
+                tiempo--;
+                console.log(tiempo);
+                actualizarContador();
+            } else {
+                detenerContador();
+                alert("Game Over");
+            }
+        }
+
+        function iniciarContador() {
+            if(!intervalo) {
+            intervalo = setInterval(contar, 1000);
+            }
+        }
+
+        function detenerContador() {
+            clearInterval(intervalo);
+            intervalo = null
+              alert(new Date().toLocaleDateString('es-ES') + "\n"
+               + primeraPregunta.value + "\n"
+                + segundaPregunta.value + "\n" 
+                + terceraPregunta.value + "\n" 
+                + cuartaPregunta.value + "\n" 
+                + quintaPregunta.value +"\n")
+             
+        }
+
+        function reiniciarContador() {
+           location.reload();
+        }
+
+         
+        actualizarContador();
+</script>
+</body>
