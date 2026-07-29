@@ -4,7 +4,6 @@
     <Link rel="stylesheet" href="misEstilos.css">
 </head>
 <audio src="alarma.mp3"></audio>
- <source src="alarma.mp3" type="audio/mpeg">
 <meta charset="UTF-8">
 <body onload="iniciarContador()">
      <p>Que seleccion tiene mas copas del mundo?</p>
@@ -24,7 +23,7 @@
     <script>
         let tiempo = 30;
         let intervalo;
-        let alarma = document.getElementById("alarma");
+
         function actualizarContador() {
             document.getElementById("contador").textContent = tiempo;
         }
@@ -36,8 +35,6 @@
             } else {
                 detenerContador();
                 alert("Game Over");
-                alarma.play();
-                
             }
         }
 
