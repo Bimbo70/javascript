@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Random 1</title>
+</head>
+<body>
+    <p>
+        <button onclick="mostrarMensaje(10, 50)">Click aqui</button>
+    </p>
+    <script>
+        function mostrarMensaje(inferior, superior){
+            let aleatorio = Math.floor(Math.random() * (superior - inferior) + inferior);
+            alert(aleatorio)
+        }
+    </script>
+</body>
