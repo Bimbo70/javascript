@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<head>|
+<head>
     <title>Calculadora</title>
+    <Link rel="stylesheet" href="misEstilos.css">
 </head>
 <body>
     <h1>Calculadora</h1>
     <input type="number" id="Numero1">
-    <input type="number" id="Numero2">
-    <button onclick="mostrarSuma()">+</button>
+    <input type="number" id="Numero2"><br>
+    <button onclick="mostrarSuma()">+</button><br>
     <button onclick="mostrarResta()">-</button>
-    <button onclick="mostrarMultiplicacion()">X</button>
+    <button onclick="mostrarMultiplicacion()">X</button><br>
     <button onclick="mostrarDivision()">/</button>
-    <button onclick="mostrarRaiz()">Raiz</button>
+    <button onclick="mostrarRaiz()">Raiz</button><br>
     <button onclick="mostrarPotencia()">Potencia</button>
-    <button onclick="mostrarAbsoluto()">Absoluto</button>
+    <button onclick="mostrarAbsoluto()">Absoluto</button><br>
     <button onclick="mostrarRandom()">Random</button>
     <h2>Resultado:</h2>
-    <input type="number" id="resultado">
+    <input  type="number" id="numeroResultado">
     <button onclick="mostrarRound()">Round</button>
     <button onclick="mostrarFloor()">Floor</button>
     <button onclick="mostrarCeil()">Ceil</button>
@@ -33,8 +34,67 @@
         let Floor
         let Ceil
 
-        function Suma(Numero1, Numero2){
-        Suma = Math.
+
+        function mostrarSuma(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let Numero2 = parseInt (document.getElementById("Numero2").value);
+        let resultado = Numero1 + Numero2
+        document.getElementById("numeroResultado").value = resultado;
+       }
+        function mostrarResta(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let Numero2 = parseInt (document.getElementById("Numero2").value);
+        let resultado = Numero1 - Numero2
+        document.getElementById("numeroResultado").value = resultado;
+       }
+        function mostrarMultiplicacion(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let Numero2 = parseInt (document.getElementById("Numero2").value);
+        let resultado = Numero1 * Numero2
+        document.getElementById("numeroResultado").value = resultado;
+       }
+        function mostrarDivision(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let Numero2 = parseInt (document.getElementById("Numero2").value);
+        let resultado = Numero1 / Numero2
+        document.getElementById("numeroResultado").value = resultado;
+       }
+        function mostrarRaiz(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let Numero2 = parseInt (document.getElementById("Numero2").value);;
+        let resultado = Math.sqrt(Numero1, Numero2);
+        document.getElementById("numeroResultado").value = resultado;
+       }
+        function mostrarPotencia(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let Numero2 = parseInt (document.getElementById("Numero2").value);;
+        let resultado = Math.pow(Numero1, Numero2)
+        document.getElementById("numeroResultado").value = resultado;
+        }
+        function mostrarAbsoluto(){
+        let Numero1 = parseInt (document.getElementById("Numero1").value);
+        let resultado = Math.abs(Numero1);
+        document.getElementById("numeroResultado").value = resultado;
+         }
+        function mostrarRandom(){
+        let resultado = Math.random()
+        document.getElementById("numeroResultado").value = resultado;
+        }
+        function mostrarRound(){
+            console.log
+        let resultado = Math.round(document.getElementById("resultado"));
+        document.getElementById("numeroResultado").value = resultado;
+        }
+        function mostrarFloor(){
+            console.log
+        let resultado = Math.floor(document.getElementById("resultado"));
+        document.getElementById("numeroResultado").value = resultado;
+        }
+        function mostrarCeil(){
+            console.log
+        let resultado = Math.ceil(document.getElementById("resultado"));
+        document.getElementById("numeroResultado").value = resultado;    
         }
     </script>
 </body>
+
