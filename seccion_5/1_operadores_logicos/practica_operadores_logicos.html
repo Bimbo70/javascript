@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operadores Logicos</title>
+        <script src="misScripts.js"></script>
+    </head>
+    <body>
+        <p>Ingrese 2 numeros diferentes</p>
+        <input type="number" id="numero1">
+        <input type="number" id="numero2">
+        <button onclick="calcular()">Calcular</button>
+        <h3>Es mayor el primero?</h3>
+        <p id="respuesta">---</p>
+
+        <script>
+            function calcular(){
+                let elementoRespuesta = document.getElementById("respuesta")
+
+                let elementoNumero1 = document.getElementById("textoRespuesta")
+                let Respuesta = elementoNumero1.value;
+
+                let Mayor = numero1 >= numero2;
+                elementoRespuesta.textContent = Mayor;
+            }
+        </script>
+    </body>
+</html>
