@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica de Examen</title>
+        <script src="Script.js"></script>
+    </head>
+    <body>
+<h1>Recomendar de Películas</h1>
+
+<h2>Ingrese su edad:</h2>
+<input type="number" id="edad" placeholder="Ingrese su edad">
+
+<h2>Seleccione un género:</h2>
+
+<button onclick="seleccionarGenero('Drama')">Drama</button>
+<button onclick="seleccionarGenero('Comedia')">Comedia</button>
+<button onclick="seleccionarGenero('Musical')">Musical</button>
+<button onclick="seleccionarGenero('Crimen')">Crimen</button>
+
+<br><br>
+
+<button onclick="recomendar()">Ver recomendación</button>
+
+<p id="resultado"></p>
+    </body>
+</html>

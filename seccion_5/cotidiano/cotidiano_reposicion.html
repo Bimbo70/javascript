@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cotidiano</title>
+        <script src="Script.js"></script>
+    </head>
+    <body>
+<h1></h1>
+
+<h2>  Ingrese su presupuesto:</h2>
+<input type="number" id="presupuesto" placeholder="Ingrese su Presupuesto">
+<h2> Ingrese la cantidad de personas</h2>
+<input type="number" id="personas">
+
+<h2>Seleccione un tipo de actividad:</h2>
+
+<button onclick="seleccionarActividad('Deportes')">Deportes</button>
+<button onclick="seleccionarActividad('Entretenimiento')">Entretenimiento</button>
+<button onclick="seleccionarActividad('Turismo')">Turismo</button>
+<button onclick="seleccionarActividad('Actividades Familiares')">Actividades Familiares</button>
+
+<br><br>
+
+<button onclick="recomendar()">Ver tipo de actividad</button>
+
+<p id="descuento"></p>
+
+<button onclick="descuento()">Ver descuento</button>
+
+<p id="resultado"></p>
+<button onclick="limpiar()">limpiar</button>
+    </body>
+</html>
