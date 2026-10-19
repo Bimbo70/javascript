@@ -1,10 +1,7 @@
 let genero = "";
 
-function seleccionarGenero(generoSeleccionado) {
-    genero = generoSeleccionado;
-}
 
-function recomendar() {
+function seleccionarGenero() {
 
     let edad = Number(document.getElementById("edad").value);
 
