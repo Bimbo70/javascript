@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Loop Do... While2</title>
+    <meta charset="UTF-8">
+    <title>Loop For 4</title>
 </head>
 <body>
+    <input type="number" id="numInput" value="5" oninput="actualizarTabla()">
+    <div id="resultado"></div>
+
     <script>
-        function tabla(){
-        let multiplicar;
+        let numero = prompt("Escruiba el numero a multiplicar")
+        function testloop(numero){
+            let x = 1
+            do {
+            console.log(numero + " x " + i + " = " + (numero * i))
+            x++;
+            }while (x < 11)
+        }
+        function actualizarTabla() {
+            let val = document.getElementById("numInput").value;
+            testLoop(Number(val));
+        }
 
-        do{
-            vueltas = prompt("Cuantas Vueltas hubo en ese ciclo");
-        }while (vueltas != "10")
-
-        document.write("<h1>Di todas esas vueltas!</h1>")
-    }
-    cantidadVueltas()
+        testLoop(5);
     </script>
 </body>
 </html>

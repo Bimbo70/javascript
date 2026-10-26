@@ -5,16 +5,17 @@
 </head>
 <body>
     <script>
+        let vueltas = prompt("Cuantas Vueltas hubo en ese ciclo");
         function cantidadVueltas(){
-        let vueltas;
 
         do{
-            vueltas = prompt("Cuantas Vueltas hubo en ese ciclo");
-        }while (vueltas != "10")
+            console.log('Vuelta ' + contador);
+            contador++;
+        }while (contador > vueltas)
 
         document.write("<h1>Di todas esas vueltas!</h1>")
     }
-    cantidadVueltas()
+    cantidadVueltas(vueltas)
     </script>
 </body>
 </html>
