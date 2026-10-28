@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>practica 1</title>
+</head>
+
+<body>
+    <script>
+        function testLoop() {
+            let array =
+                ['A', 'A', 'B', 'A', 'B', 'B', 'A'];
+
+            for (let letra of array) {
+                if (letra === 'A') {
+                    document.write(letra + "<br>");
+                } else {
+
+                    break;
+                    document.write("La letra B")
+                }
+            }
+            document.write("Eso es todo");
+        }
+        testLoop();
+    </script>
+</body>
+
+</html>
