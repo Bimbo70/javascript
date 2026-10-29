@@ -1,28 +1,37 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Cotidiano</title>
-    <script src="boletin.js"></script>
+    <meta charset="UTF-8">
+    <title>Boletín estudiantil</title>
     <link rel="stylesheet" href="boletin.css">
 </head>
 <body>
     <h1>Bienvenido a tu boletín estudiantil</h1>
-    <h3>Alumno: Dilan Barquero</h3>
-    <h3>Notas</h3>
-    <section>
-        <div>
-            <script>
-                testLoop()
-            </script>
-        </div>
-    </section>
-    <h3>Promedio:</h3>
-    <p id="prom">---</p>
-    <button>Calcular promedio</button>
-    <h3>Nota más alta:</h3>
-    <p id="alta">---</p>
-    <button>Buscar nota más alta</button>
-    <h3>¿Hubo algún aplazo?</h3>
-    <p id="aplazo">---</p>
-    <button>Consultar aplazo</button>
+
+    <main>
+        <h2>Alumno: Dilan Barquero Rojas</h2>
+
+        <section>
+            <h3>Notas:</h3>
+            <ul id="listaNotas"></ul>
+        </section>
+
+        <section>
+            <h3>Promedio: <span id="resultadoPromedio"></span></h3>
+            <button id="btnPromedio">Calcular promedio</button>
+        </section>
+
+        <section>
+            <h3>Nota más alta: <span id="resultadoMayor"></span></h3>
+            <button id="btnMayor">Buscar nota más alta</button>
+        </section>
+
+        <section>
+            <h3>¿Hubo algún aplazo? <span id="resultadoAplazo"></span></h3>
+            <button id="btnAplazo">Consultar aplazo</button>
+        </section>
+    </main>
+
+    <script src="boletin.js"></script>
 </body>
 </html>
